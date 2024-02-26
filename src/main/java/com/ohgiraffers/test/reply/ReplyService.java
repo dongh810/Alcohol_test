@@ -17,7 +17,14 @@ public class ReplyService {
 
     public List<Reply> selectAllReply() {
         List<Reply> replies = replyMapper.selectAllReply();
-        replies.forEach(System.out::print);
+        replies.forEach(System.out::println);
+
+        return replies;
+    }
+
+    public List<Reply> selectAllReplyInBoard(int postId) {
+        List<Reply> replies = replyMapper.selectAllReplyInBoard(postId);
+        replies.forEach(System.out::println);
 
         return replies;
     }
