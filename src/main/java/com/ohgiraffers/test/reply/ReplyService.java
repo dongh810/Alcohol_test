@@ -28,4 +28,18 @@ public class ReplyService {
 
         return replies;
     }
+
+    public List<Reply> selectReplyBySearch(String searchingValue) {
+        List<Reply> replies = replyMapper.selectReplyBySearch(searchingValue);
+        replies.forEach(System.out::println);
+
+        return replies;
+    }
+
+    public List<Reply> selectReplyByWriter(int memberId) {
+        List<Reply> replies = replyMapper.selectReplyByWriter(memberId);
+        replies.forEach(System.out::println);
+
+        return replies;
+    }
 }

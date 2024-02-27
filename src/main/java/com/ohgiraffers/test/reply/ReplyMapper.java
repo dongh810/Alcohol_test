@@ -9,4 +9,8 @@ public interface ReplyMapper {
     List<Reply> selectAllReply();
 
     List<Reply> selectAllReplyInBoard(int postId);
+
+    List<Reply> selectReplyBySearch(String searchingValue);
+
+    List<Reply> selectReplyByWriter(int memberId);
 }

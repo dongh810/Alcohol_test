@@ -11,6 +11,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 @SpringBootTest
 class ReplyServiceTest {
 
@@ -39,6 +41,24 @@ class ReplyServiceTest {
 
         assertThat(replies.size()).isEqualTo(2);
 
+    }
+
+    @DisplayName("댓글 검색기능 테스트")
+    @ParameterizedTest
+    @ValueSource(strings = "2번")
+    void testSelectReplyBySearch(String inputValue) {
+        List<Reply> replies = selectReplyService.selectReplyBySearch(inputValue);
+
+        assertTrue(replies.size() != 0 );
+    }
+
+    @DisplayName("회원별 작성댓글 조회 테스트")
+    @ParameterizedTest
+    @ValueSource(ints = 2)
+    void testSelectReplyByWriter(int memberId) {
+        List<Reply> replies = selectReplyService.selectReplyByWriter(memberId);
+
+        assertTrue(replies.size() != 0 );
     }
 
 
