@@ -1,5 +1,6 @@
-package com.ohgiraffers.test.reply;
+package com.teamphoenix.postreply.reply.command.repository;
 
+import com.teamphoenix.postreply.reply.command.entity.Reply;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

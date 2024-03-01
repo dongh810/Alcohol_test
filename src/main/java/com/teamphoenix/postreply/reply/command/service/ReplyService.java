@@ -1,5 +1,7 @@
-package com.ohgiraffers.test.reply;
+package com.teamphoenix.postreply.reply.command.service;
 
+import com.teamphoenix.postreply.reply.command.entity.Reply;
+import com.teamphoenix.postreply.reply.command.repository.ReplyMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package com.ohgiraffers.test.reply;
+package com.teamphoenix.postreply.reply.command.entity;
 
 public class Reply {
 

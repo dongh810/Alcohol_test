@@ -2,8 +2,8 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.ohgiraffers.test.reply.ReplyMapper">
-    <resultMap id="replyResultMap" type="com.ohgiraffers.test.reply.Reply">
+<mapper namespace="com.teamphoenix.postreply.reply.command.repository.ReplyMapper">
+    <resultMap id="replyResultMap" type="com.teamphoenix.postreply.reply.command.entity.Reply">
         <id property="reply_id" column="REPLY_ID"/>
         <result property="post_id" column="POST_ID"/>
         <result property="reply_content" column="REPLY_CONTENT"/>

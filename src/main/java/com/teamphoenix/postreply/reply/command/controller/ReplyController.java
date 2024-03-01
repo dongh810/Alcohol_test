@@ -1,5 +1,7 @@
-package com.ohgiraffers.test.reply;
+package com.teamphoenix.postreply.reply.command.controller;
 
+import com.teamphoenix.postreply.reply.command.service.ReplyService;
+import com.teamphoenix.postreply.reply.command.entity.Reply;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
