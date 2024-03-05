@@ -5,7 +5,7 @@
     <persistence-unit name="jpatest">
 
         <!-- 설명. 엔티티는 설정에 따로 추가할 것 -->
-        <class>com.teamphoenix.postreply.reply.query.entity.Reply</class>
+        <class>com.teamphoenix.postreply.reply.query.aggregate.Reply</class>
 
         <properties>
 
