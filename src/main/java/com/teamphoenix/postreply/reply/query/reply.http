@@ -1,0 +1,11 @@
+POST localhost:8888/reply/regist
+Content-Type: application/json
+
+{
+  "postId" : 2,
+  "replyContent" : "댓글 추가 test!!!!!!!",
+  "replyDate" : "2024-03-05",
+  "reportAcceptance" : "0",
+  "useAcceptance" : "1",
+  "memberCode" : 2
+}
