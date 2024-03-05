@@ -2,7 +2,7 @@ package com.teamphoenix.postreply.reply.query.service;
 
 import com.teamphoenix.postreply.reply.query.dto.ReplyDTO;
 import com.teamphoenix.postreply.reply.query.repository.ReplyRespository;
-import com.teamphoenix.postreply.reply.query.entity.Reply;
+import com.teamphoenix.postreply.reply.query.aggregate.Reply;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

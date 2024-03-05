@@ -1,4 +1,4 @@
-package com.teamphoenix.postreply.reply.query.entity;
+package com.teamphoenix.postreply.reply.query.aggregate;
 
 import jakarta.persistence.*;
 import lombok.*;

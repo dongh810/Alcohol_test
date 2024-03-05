@@ -1,6 +1,6 @@
 package com.teamphoenix.query;
 
-import com.teamphoenix.postreply.reply.query.entity.Reply;
+import com.teamphoenix.postreply.reply.query.aggregate.Reply;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
