@@ -4,12 +4,16 @@ import com.teamphoenix.postreply.reply.query.dto.ReplyDTO;
 import com.teamphoenix.postreply.reply.query.service.ReplyService1;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
-@Controller
+import java.net.URI;
+import java.nio.charset.Charset;
+
+@RestController
 @RequestMapping("/reply")
 @Slf4j
 public class ReplyController1 {
@@ -21,15 +25,14 @@ public class ReplyController1 {
         this.replyService = replyService;
     }
 
-    @GetMapping("/regist")
-    public void registReply(){}
-
     @PostMapping("/regist")
-    public String registReply(ReplyDTO reply) {
-        log.info("댓글 등록 테스트: {}", reply);
+    public ResponseEntity<?> registReply(@RequestBody ReplyDTO reply) {
+        System.out.println("reply = " + reply);
 
         replyService.registReply(reply);
 
-        return "등록성공!";
+        return ResponseEntity
+                .created(URI.create("/reply/replieslist/"))
+                .build();
     }
 }
