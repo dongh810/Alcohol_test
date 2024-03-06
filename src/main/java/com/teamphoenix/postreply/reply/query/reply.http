@@ -1,3 +1,5 @@
+
+### 댓글 추가 TEST
 POST localhost:8888/reply/regist
 Content-Type: application/json
 
@@ -9,3 +11,16 @@ Content-Type: application/json
   "useAcceptance" : "1",
   "memberCode" : 2
 }
+
+### 댓글 수정 TEST
+PUT localhost:8888/reply/modify/6
+Content-Type: application/json
+
+{
+"replyContent": "댓글이 수정이 됐나요~?"
+}
+
+### 댓글 삭제 TEST
+DELETE localhost:8888/reply/delete/8
+
+###
