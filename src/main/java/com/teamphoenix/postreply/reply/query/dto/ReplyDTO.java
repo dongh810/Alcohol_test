@@ -1,13 +1,8 @@
-package com.teamphoenix.postreply.reply.query.dto;
+package com.teamphoenix.ahub.reply.query.dto;
 
-import jakarta.persistence.Column;
-import lombok.*;
+import lombok.Data;
 
-@NoArgsConstructor
-@AllArgsConstructor
-@Getter
-@Setter
-@ToString
+@Data
 public class ReplyDTO {
 
     private int replyId;
@@ -17,5 +12,4 @@ public class ReplyDTO {
     private int reportAcceptance;
     private int useAcceptance;
     private int memberCode;
-
 }
